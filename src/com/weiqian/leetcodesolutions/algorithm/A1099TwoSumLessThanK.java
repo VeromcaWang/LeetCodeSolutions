@@ -76,7 +76,7 @@ public class A1099TwoSumLessThanK {
 
     /*
      * Arrays.sort(T):
-     * 1. Quick sort for primitive types: int, short, long, float, double. Time: O(n*log(n)) Space: O(n)
-     * 2. Merge sort for Object types. Time: O(n*log(n)) Space: O(1)
+     * 1. Quick sort for primitive types: int, short, long, float, double. Time: O(n*log(n)) Space: O(n+n)
+     * 2. Merge sort for Object types. Time: O(n*log(n)) Space: O(n)
      */
 }
