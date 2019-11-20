@@ -38,7 +38,7 @@ public class A279PerfectSquare {
      *     11   8  5  8   5  0   3  0
      *
      */
-    public int numSquares(int n) {
+    public int numSquares1(int n) {
         List<Integer> queue = new ArrayList<>();
         Set<Integer> set = new HashSet<>();
         queue.add(n);
@@ -66,5 +66,41 @@ public class A279PerfectSquare {
         }
 
         return level;
+    }
+
+
+    /*
+     * DP Approach:
+     *
+     */
+
+    public static int numSquares2(int n) {
+        int[] dp = new int[n+1];
+        int m = n;
+
+        for(int i = 0; i < n; i++){
+            if(i * i == n) return 1;
+            if(i * i > n) {
+                m = i-1;
+                break;
+            }
+        }
+
+        dp[0] = 0;
+        for(int j = 1; j < n+1; j++){
+            dp[j] = Integer.MAX_VALUE;
+            for(int k = 1; k < m+1; k++){
+                if(j >= k*k && dp[j-k*k] != Integer.MAX_VALUE){
+                    dp[j] = Math.min(dp[j-k*k]+1,dp[j]);
+                }
+            }
+        }
+
+        return dp[n];
+    }
+
+
+    public static void main(String[] args){
+        System.out.println(numSquares2(12));
     }
 }
