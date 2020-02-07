@@ -22,7 +22,7 @@ package com.weiqian.leetcodesolutions.algorithm;
  *  the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose of this problem,
  *  assume that your function returns 0 when the reversed integer overflows.
  */
-public class A7ReverseInteger {
+public class A7_ReverseInteger {
 
     /*
      * A pure math problem.

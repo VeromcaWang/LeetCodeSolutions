@@ -24,7 +24,7 @@ package com.weiqian.leetcodesolutions.algorithm;
  *  Follow up:
  *  Could you solve it without converting the integer to a string?
  */
-public class A9PalindromeNumber {
+public class A9_PalindromeNumber {
 
     /*
      * Approach 1: convert the number to a string
@@ -43,7 +43,7 @@ public class A9PalindromeNumber {
 
 
     /*
-     * Approach 2: use A7ReverseInteger. Compare if the reversed number is the same.
+     * Approach 2: use A7_ReverseInteger. Compare if the reversed number is the same.
      * For Follow up: without converting to a string.
      */
     public boolean isPalindrome2(int x) {

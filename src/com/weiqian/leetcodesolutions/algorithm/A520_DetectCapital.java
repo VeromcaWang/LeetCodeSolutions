@@ -1,6 +1,6 @@
 package com.weiqian.leetcodesolutions.algorithm;
 
-public class A520DetectCapital {
+public class A520_DetectCapital {
 
     /*
      *  1.如果第一个字母大写：

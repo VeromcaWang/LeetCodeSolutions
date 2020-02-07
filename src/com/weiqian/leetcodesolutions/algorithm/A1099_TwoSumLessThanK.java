@@ -18,7 +18,7 @@ import java.util.Arrays;
  * Output: -1
  * Explanation: In this case it's not possible to get a pair sum less that 15.
  */
-public class A1099TwoSumLessThanK {
+public class A1099_TwoSumLessThanK {
 
     /*
      * Approach 1:

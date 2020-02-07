@@ -1,6 +1,6 @@
 package com.weiqian.leetcodesolutions.algorithm;
 
-public class A70ClimbingStairs {
+public class A70_ClimbingStairs {
     public int climbStairs(int n) {
         int[] f = new int[n+1];
         f[0] = 1;

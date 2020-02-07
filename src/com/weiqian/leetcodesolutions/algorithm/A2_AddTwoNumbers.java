@@ -1,6 +1,6 @@
 package com.weiqian.leetcodesolutions.algorithm;
 
-public class A2AddTwoNumbers {
+public class A2_AddTwoNumbers {
 
     public static class ListNode{
         int val;

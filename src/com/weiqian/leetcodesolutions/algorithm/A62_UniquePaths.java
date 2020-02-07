@@ -21,7 +21,7 @@ package com.weiqian.leetcodesolutions.algorithm;
  *  Input: m = 7, n = 3
  *  Output: 28
  */
-public class A62UniquePaths {
+public class A62_UniquePaths {
     public int uniquePaths(int m, int n) {
         // f[i][j] = f[i-1][j] + f[j-1][i]
         int[][] f = new int[m][n];

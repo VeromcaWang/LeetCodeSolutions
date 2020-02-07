@@ -29,7 +29,7 @@ package com.weiqian.leetcodesolutions.algorithm;
  * 2. Down -> Down -> Right -> Right
  *
  */
-public class A63UniquePathsII {
+public class A63_UniquePathsII {
 
     /*
      * DP Approach: 62的变体

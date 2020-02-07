@@ -22,7 +22,7 @@ import java.util.Set;
  * Explanation: 13 = 4 + 9.
  *
  */
-public class A279PerfectSquare {
+public class A279_PerfectSquare {
 
     /*
      * BFS Aproach:

@@ -25,7 +25,7 @@ import java.util.Queue;
  *       [15,7]
  *      ]
  */
-public class A102BinaryTreeLevelOrderTraverse {
+public class A102_BinaryTreeLevelOrderTraverse {
     public class TreeNode {
         int val;
         TreeNode left;

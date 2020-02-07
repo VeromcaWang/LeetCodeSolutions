@@ -12,7 +12,7 @@ package com.weiqian.leetcodesolutions.algorithm;
  * Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.
  *
  */
-public class A713SubarrayProductLessThanK {
+public class A713_SubarrayProductLessThanK {
 
     /*
      * Force solution: Time O(n^2) Space O(n)

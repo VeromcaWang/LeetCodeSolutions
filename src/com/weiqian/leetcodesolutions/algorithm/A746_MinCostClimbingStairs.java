@@ -1,6 +1,6 @@
 package com.weiqian.leetcodesolutions.algorithm;
 
-public class A746MinCostClimbingStairs {
+public class A746_MinCostClimbingStairs {
     public int minCostClimbingStairs(int[] cost) {
         int steps = cost.length;
         int[] f = new int[steps+1];

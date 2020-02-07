@@ -1,6 +1,6 @@
 package com.weiqian.leetcodesolutions.algorithm;
 
-public class A256PaintHouse {
+public class A256_PaintHouse {
     public static int minCost(int[][] costs) {
         if(costs.length < 1) return 0;
 

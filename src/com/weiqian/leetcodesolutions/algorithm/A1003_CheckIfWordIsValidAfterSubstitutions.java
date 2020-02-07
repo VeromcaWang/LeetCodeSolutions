@@ -39,7 +39,7 @@ import java.util.Stack;
  * Output: false
  *
  */
-public class A1003CheckIfWordIsValidAfterSubstitutions {
+public class A1003_CheckIfWordIsValidAfterSubstitutions {
 
     /*
      *  Approach 1: replace "abc" util S becomes empty.

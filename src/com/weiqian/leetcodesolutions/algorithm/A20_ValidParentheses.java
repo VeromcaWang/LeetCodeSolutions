@@ -34,7 +34,7 @@ import java.util.Stack;
  *  Input: "{[]}"
  *  Output: true
  */
-public class A20ValidParentheses {
+public class A20_ValidParentheses {
 
     /*
      * 从左到右把整个String过一遍，如果是做括号，放入stack，如果是右括号，从stack顶部拿出一个左括号来比较是否配对
