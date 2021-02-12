@@ -38,17 +38,16 @@ public class A215_KthLargestElementInAnArray {
 
         // 抽取一个元素作为中心点，大的放左边，小的放右边，那么这个元素在数组中的位置m就表示它是第m大的元素
         // 然后去验证这个m是否等于k，如果m比k大，就再同样处理一次这个数左边的部分， m比k小就处理它右边
+        // 直到我们抽取到的元素就是第k大元素
 
         if(nums == null || nums.length == 0) return 0;
         int left = 0;
         int right = nums.length-1;
 
-        while(true){
-            int pos = partition(nums, left, right);
-            if(pos + 1 == k) return nums[pos];
-            else if (pos + 1 > k) right = pos - 1;
-            else left = pos + 1;
-        }
+        int pos = partition(nums, left, right);
+        if(pos + 1 == k) return nums[pos];
+        else if (pos + 1 > k) return partition(nums, left, pos - 1);
+        else return partition(nums, pos + 1, right);
     }
 
     public int partition(int[] nums, int left, int right){
@@ -70,7 +69,7 @@ public class A215_KthLargestElementInAnArray {
                 r--;
             }
         }
-        swap(nums, left, r);
+        swap(nums, left, r); // 记得交换一下pivot和nums[r]，因为pivot至始至终没动过
         return r;
     }
 
